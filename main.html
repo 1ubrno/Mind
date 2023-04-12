@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind🧠</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+    <script src="script.js"></script>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <p id="logo">MIND🧠</p>
+                    <nav class="header-nav">
+                        <a href="#">Agenda</a>
+                        <a href="#">Clima</a>
+                        <a href="#">Foco</a>
+                    </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="first-section">
+                 <div class="main-container">
+                    <div class="content">
+                        <h1 id="home">📑 Adicione suas tarefas 📑</h1>
+                    </div>
+                        <div class="tasks-container">
+                            <div class="task">
+                            <form onsubmit="adicionarTarefa(); return false;">
+                              <label for="tarefa" id="label-quest">O que precisa ser feito?</label><br>
+                              <input type="text" id="tarefa" name="tarefa"><br>
+                          
+                              <input type="checkbox" id="prioridade" name="prioridade" style="display: none;">
+
+                              <button type="submit" style="display: none;"></button>
+                              </form>
+                          <hr style="margin-top: 15px;">
+                              <ul id="lista-de-tarefas">
+                              <!-- aqui é onde as tarefas serão listadas -->
+                              </ul>
+                              <button id="botao-excluir-todos">Excluir todos</button>
+                             </div>
+                        </div>  
+
+                 </div>
+        </section>
+    </main>
+        
+</body>
+</html>
